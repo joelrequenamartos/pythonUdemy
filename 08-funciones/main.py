@@ -108,4 +108,31 @@ print(calculadora(5,5, True))
 print("")
 print(calculadora(2,9, False))
 
-#test
+print("\n")
+print("##### Ejemplo 7 #####")
+
+def getNombre(nombre):
+    texto =f"El nombre es {nombre}"
+    return texto
+
+def getApellido(apellido):
+    texto =f"Los apellidos son {apellido}"
+    return texto
+
+print(getNombre("Joel"), getApellido("Requena Martos"))
+
+def getAll(nombre, apellido):
+    texto =getNombre(nombre) + " " + getApellido(apellido)
+    return texto
+    
+print(getAll("Joel", "Requena Martos"))
+
+print("\n")
+print("##### Ejemplo 8 #####")
+#Funciones Lambda, funciones anonimas.
+
+dimeElYear = lambda year: f"El año es {year}"
+print(dimeElYear(1234))
+
+dimeElYear2 = lambda year: f"El año es {year * 2}"
+print(dimeElYear2(1234))
