@@ -17,7 +17,6 @@ print(frase.strip())
 
 year = 2023
 print(year)
-
 del year
 #print(year)
 

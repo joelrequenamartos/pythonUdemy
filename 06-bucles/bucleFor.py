@@ -25,11 +25,11 @@ if numeroUsuario < 1:
 print(f"#### Tabla de multiplicar del número {numeroUsuario} ####")
 
 for numeroTabla in range(1,11):
-    if numeroUsuario == 33:
-        print("Me repites ese numerín? jiji")
-        print("")
-        break
-    print(f"{numeroUsuario} x {numeroTabla} = {numeroTabla * numeroUsuario}")
+        print(f"{numeroUsuario} x {numeroTabla} = {numeroTabla * numeroUsuario}")
 else:
     print("Tabla finalizada")
     print("")
+#no hace falta tener un if para poder poner un else en un for, no todos los lenguajes tiene eso.
+    
+for yamaha in range(1,8):
+    print("tengo la yamaha R" + str(yamaha))

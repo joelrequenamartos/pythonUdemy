@@ -10,13 +10,13 @@ nomnbreFuncion(parametro1)
 nomnbreFuncion(parametro2)
 """
 print("##### Ejemplo 1 #####")
-
 def muestraNombre():
     print("Joel")
     print("Pol")
     print("Angela")
     print("Paco")
     print("")
+
 #Invocar funcion
 muestraNombre()
 
@@ -30,6 +30,7 @@ def mostrarTuNombre(nombre, edad):
         print("Eres mayor de edad")
     else:
         print("Eres menor de edad")
+        
 nombre = input("Introduce tu nombre: ")
 edad = int(input("Introduce tu edad: "))
 
@@ -66,9 +67,19 @@ def getEmpleado (nombre, dni = None):
         print("Identificacion.")
         print(f"DNI: {dni}")
     
-    
 getEmpleado("Joel")
 
+"""
+def getEmpleado (nombre, dni):
+    print("Empleado.")
+    print(f"Nombre: {nombre}")
+    
+    if dni != None:
+        print("Identificacion.")
+        print(f"DNI: {dni}")
+    
+getEmpleado("Joel", "47421156D")    
+"""
 
 print("\n")
 print("##### Ejemplo 5 #####")
@@ -76,7 +87,7 @@ print("##### Ejemplo 5 #####")
 def saludame(nombre):
     saludo = f"Hola, saludos {nombre}"
     
-    return saludo
+    return saludo #devolver valor de dentro de una funcion.
 
 print(saludame("Joel"))
 
@@ -122,7 +133,7 @@ def getApellido(apellido):
 print(getNombre("Joel"), getApellido("Requena Martos"))
 
 def getAll(nombre, apellido):
-    texto =getNombre(nombre) + " " + getApellido(apellido)
+    texto = getNombre(nombre) + " " + getApellido(apellido)
     return texto
     
 print(getAll("Joel", "Requena Martos"))

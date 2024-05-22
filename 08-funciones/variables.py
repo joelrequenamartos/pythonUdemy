@@ -13,8 +13,9 @@ print(frase)
 
 def holaMundo():
     frase = "Hola Mundo"       #toggle to see changes between global and local var
-    print("dentro de la funcion")
     print(frase)
+    print("dentro de la funcion")
+    
     year = 2023
     print(year)
     
