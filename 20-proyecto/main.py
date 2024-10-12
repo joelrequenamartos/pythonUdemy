@@ -6,6 +6,7 @@ Proyecto Python y Mysql
 - Si elegimos login, identifica al usuario y nos preguntará:
  - Crear nota, mostrar nota, borrar nota, etc.
 """
+
 from usuarios import acciones
 
 print("""
@@ -16,7 +17,7 @@ print("""
 
 hazEl = acciones.Acciones()
 
-accion = input("¿Que quirees hacer?: ")
+accion = input("¿Que quieres hacer?: ")
 
 if accion == "registro":
     hazEl.registro()
